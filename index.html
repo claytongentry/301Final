@@ -24,32 +24,7 @@
         <link type = "text/css" rel = "stylesheet" href = "index.css">
 
         <script type = "text/javascript" src = "jquery-1.11.1.js"></script>
-        <script type = "text/javascript" src = "http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-        <script type = "text/javascript" src = "greensock-js/src/uncompressed/TweenMax.js"></script>
-        <script type = "text/javascript" src = "ScrollMagic/js/jquery.scrollmagic.js"></script>
         <script type = "text/javascript" src = "index.js"></script>
-
-        <!--Motherfucking parallax-->
-        <script type="text/javascript">
-
-          // init the controller
-  		  		var controller = new ScrollMagic({
-  		  			globalSceneOptions: {
-  		  				triggerHook: "onLeave"
-  		  			}
-  		  		});
-
-            var sceneOptions = {duration: 200, offset: -100};
-    				var block = $("#block");
-
-    				// fade
-    				new ScrollScene(sceneOptions)
-    					.addTo(controller)
-    					.triggerHook("onCenter")
-    					.triggerElement(block)
-    					.setTween(TweenMax.from(block, 1, {autoAlpha: 0}));
-
-        </script>
 
         <title>The Capital</title>
 
