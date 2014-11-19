@@ -1,0 +1,83 @@
+#header {
+  margin: 10px auto 10px auto;
+  height: auto;
+  width: 1050px;
+  text-align: center;
+}
+
+#header video {
+  position: absolute;
+  background-size: cover;
+  top: 0; left: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -1;
+}
+
+#block {
+  position: relative;
+  margin-top: 210px;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#header h1 {
+  color: white;
+  font-size: 160px;
+  font-family: Langdon;
+}
+
+#header h4 {
+  margin-top: 20px;
+  color: white;
+  font-size: 18px;
+  font-family: Langdon;
+  line-height: 30px;
+}
+
+#header #byline {
+  font-size: 18px;
+  margin-top: 15px;
+  color: #bdbdbd;
+  font-family: Langdon;
+}
+
+#story_container {
+  margin: 50px auto 10px auto;
+  height: auto;
+  width: 650px;
+  text-align: left;
+  margin-left: 300px;
+}
+
+#story_container p {
+  margin-top: 28px;
+  line-height: 27px;
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+}
+
+#story_container #drop {
+  font-family: Langdon;
+  color: red;
+  font-size: 75px;
+  float: left;
+  line-height: 50px;
+  padding: 4px 8px auto 3px;
+}
+
+.footer {
+  position: relative;
+  margin: 5px auto auto auto;
+  padding-top: 22px;
+  height: 60px;
+  width: auto;
+  text-align: center;
+  background-color: black;
+}
+
+.footer p {
+  color: white;
+  font-family: Langdon;
+}
