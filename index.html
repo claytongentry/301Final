@@ -9,6 +9,10 @@
         <link type = "text/css" rel = "stylesheet" href = "bootstrap/css/bootstrap.min.css">
         <link type = "text/css" rel = "stylesheet" href = "bootstrap/css/bootstrap.css">
         <link type = "text/css" rel = "stylesheet" href = "http://fonts.googleapis.com/css?family=Roboto">
+
+        <!--SoundCiteJS-->
+        <link href='//cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css'><script type='text/javascript' src='//cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
+
         <link type = "text/css" rel = "stylesheet" href = "index.css">
 
         <title>The Capital</title>
@@ -107,9 +111,9 @@
 
                 </p><p>Hall said his Marine uniform was hanging in the backseat of the car.
 
-                </p><p>“If I wasn’t in a position where I was in some sort of privilege by being a vet, if I had not served my country already,” he said, “there’s no telling how criminalized my life would be right now.”
+                <p><span class="soundcite" data-id="178521230" data-start="0" data-end="14472">“If I wasn’t in a position to where I had some sort of privilege by being a vet, if I had not served my country already,” he said, “there’s no telling how criminalized my life could be right now.”</span></p>
 
-                </p><p>In an attempt to reduce the 2012 murder rate, Chicago paid police officers approximately $103 million in overtime in 2013, with some officers receiving more overtime pay than salary. The 2013 murder total dropped to 414 from the 2012 total of 500, according to the FBI’s 2013 crime report.
+                <p>In an attempt to reduce the 2012 murder rate, Chicago paid police officers approximately $103 million in overtime in 2013, with some officers receiving more overtime pay than salary. The 2013 murder total dropped to 414 from the 2012 total of 500, according to the FBI’s 2013 crime report.
 
                 </p><p>Butler, the Englewood resident, said the increased police presence in her neighborhood did not make residents feel more secure, in spite of the reduced homicide count.
 
@@ -117,12 +121,27 @@
 
                 </p>
                 <!--This is where our final video story will go-->
+                <script>
+                function playPause(btn,vid) {
+
+                    var vid = document.getElementById(vid);
+                    if (vid.paused) {
+                        vid.play();
+                        btn.innerHTML = "Pause";
+                    } else {
+                        vid.pause();
+                        btn.innerHTML = "Play";
+                    }
+
+                }
+
+                </script>
                 <div id = "video_story">
                     <div id = "vid_header">
                         <h5>Spotlight on Englewood</h5>
                         <h2>a more interesting title goes here</h2>
                     </div>
-                    <video controls style = "width: 1000px; margin-left: -100px;">
+                    <video id = "spotlight_Englewood" controls = "controls" style = "width: 1000px; margin-left: -100px;">
                         <source src = "Englewood_Roll.mp4" type = "video/mp4">
                     </video>
                 </div>
