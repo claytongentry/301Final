@@ -42,6 +42,43 @@
   font-family: Langdon;
 }
 
+#interactive {
+  height: 515px;
+  width: auto;
+  margin: 5px auto 5px auto;
+  text-align: center;
+}
+
+#interactive h3 {
+  font-family: Langdon;
+  font-size: 40px;
+}
+
+#interactive #crimeChart {
+  margin: 5px auto 5px auto;
+}
+
+#interactive #interactive_key {
+  width: 150px;
+  height: 30px;
+  margin: 5px auto 5px auto;
+  border: 1px solid black;
+  padding: 7px;
+}
+
+#interactive #interactive_key #color_box {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255,0,0,0.6);
+}
+
+#interactive #interactive_key p {
+  font-family: Langdon;
+  font-size: 16px;
+  margin-top: -17px;
+  margin-left: 5px;
+}
+
 #story_container {
   margin: 50px auto 10px auto;
   height: auto;
