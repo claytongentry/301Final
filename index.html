@@ -11,13 +11,8 @@
         <link type = "text/css" rel = "stylesheet" href = "bootstrap/css/bootstrap.css">
         <link type = "text/css" rel = "stylesheet" href = "http://fonts.googleapis.com/css?family=Roboto">
 
-        <!--SoundCiteJS-->
-        <link href='//cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css'><script type='text/javascript' src='//cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
-
         <!--My CSS-->
         <link type = "text/css" rel = "stylesheet" href = "index.css">
-
-        <script type = "text/javascript" src = "Chart.min.js"></script>
 
         <title>The Capital</title>
 
@@ -62,29 +57,11 @@
             <h3>chicago murders over time</h3>
 
             <!--Interactive will go here-->
-            <canvas id = "crimeChart" width = "1350" height = "400"></canvas>
-            <script>
-                var murderData = {
-                    labels : ["1992", "1993", "1994", "1995", "1996", "1997",
-                    "1998", "1999", "2000", "2001", "2002", "2003", "2004",
-                    "2005", "2006", "2007", "2008", "2009", "2010", "2011",
-                    "2012", "2013"],
-                    // Murder
-                    datasets : [
-                        {
-                            fillColor : "rgba(255,0,0,0.6)",
-                            strokeColor : "#ACC26D",
-                            pointColor : "#fff",
-                            pointStrokeColor : "#9DB86D",
-                            data : [943, 855, 931, 828, 796, 761, 704, 643, 633,
-                            667, 656, 601, 453, 451, 471, 448, 513, 459, 436,
-                            435, 516, 415]
-                        }
-                    ]
-                }
-                var crimeChart = document.getElementById("crimeChart").getContext("2d");
-                new Chart(crimeChart).Line(murderData);
-            </script>
+            <div id = "event_box">
+              <p>Click a label!</p>
+            </div>
+
+            <div id = "room_for_chart"></div>
 
             <div id = "interactive_key">
                 <div id = "color_box"></div>
@@ -285,6 +262,8 @@
         </div>
 
         <script type = "text/javascript" src = "jquery-1.11.1.js"></script>
+        <script type = "text/javascript" src = "Chart.js"></script>
+        <script type = "text/javascript" src = "interactive.js"></script>
 
     </body>
 

@@ -55,13 +55,34 @@
 }
 
 #interactive #crimeChart {
-  margin: 5px auto 5px auto;
+  margin: -15px auto 5px auto;
 }
 
-#interactive #interactive_key {
+#event_box {
+  width: 275px;
+  height: 175px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: black;
+  float: right;
+  margin-top: 50px;
+  margin-bottom: -200px;
+  margin-right: 240px;
+  overflow: scroll;
+}
+
+#event_box p {
+  margin-top: 30px;
+  font-family: Roboto;
+  font-size: 25px;
+  color: white;
+}
+
+#interactive_key {
   width: 150px;
   height: 30px;
-  margin: 5px auto 5px auto;
+  margin-top: -395px;
+  margin-left: 625px;
   border: 1px solid black;
   padding: 7px;
 }
