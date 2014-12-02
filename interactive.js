@@ -20,7 +20,7 @@ $(document).ready(function() {
             fillColor : "rgba(255,0,0,0.6)",
             strokeColor : "#36c",
             pointColor : "#fff",
-            pointStrokeColor : "#9DB86D",
+            pointStrokeColor : "#aaa",
 
             data : [851, 927, 943, 855, 931, 828, 796, 761, 704, 643, 633,
             667, 656, 601, 453, 451, 471, 448, 513, 459, 436,
@@ -32,83 +32,133 @@ $(document).ready(function() {
   var ctx = document.getElementById("crimeChart").getContext("2d");
   var crimeChart = new Chart(ctx).Line(murderData);
 
+  // Turns cursor into a pointer on label:hover
+  /*$(murderData.datasets.data).on('mouseover', function() {
+    $(this).css("cursor", "pointer");
+  });*/
+
   holder.onclick = function(evt){
+
       var activePoints = crimeChart.getPointsAtEvent(evt);
       // => activePoints is an array of points on the canvas that are at the same position as the click event.
       console.log(activePoints[0].x);
+
       var eventBox = document.getElementById("event_box");
+      var eventTitle = document.getElementById("event_title");
+      var eventText = document.getElementById("event_text");
+      var eventDate = document.getElementById("event_date");
+      var eventImage = document.getElementById("event_image");
+
       switch(activePoints[0].x) {
+        // 1990
         case 91:
-          eventBox.querySelector("p").innerHTML = ("1990");
+          eventDate.innerHTML = ("1990");
           break;
+        // 1991
         case 145:
-          eventBox.querySelector("p").innerHTML = ("1991");
+          eventDate.innerHTML = ("1991");
+          eventTitle.innerHTML = ("ASSAULT WEAPONS BANNED");
+          eventText.innerHTML = ("The City of Chicago voted to ban assault weapons within city limits.");
           break;
+        // 1992
         case 199:
-          eventBox.querySelector("p").innerHTML = ("1992");
+          eventDate.innerHTML = ("1992");
           break;
+        // 1993
         case 253:
-          eventBox.querySelector("p").innerHTML = ("1993");
+          eventDate.innerHTML = ("1993");
           break;
+        // 1994
         case 307:
-          eventBox.querySelector("p").innerHTML = ("1994");
+          eventDate.innerHTML = ("1994");
+          eventTitle.innerHTML = ("RECORD NUMBER OF YOUNG PEOPLE KILLED.");
+          eventText.innerHTML = ("278 people ages 11-20 were killed in Chicago, 33 more than the previous record of 245 in 1993.");
           break;
+        // 1995
         case 361:
-          eventBox.querySelector("p").innerHTML = ("1995");
+          eventDate.innerHTML = ("1995");
+          eventTitle.innerHTML = ("HUD TAKES OVER CHA");
+          eventText.innerHTML = ("The Department of Housing and Urban Development takes over the Chicago Housing Authority with plans to demolish several housing projects, including Cabrini-Green.");
           break;
+        // 1996
         case 415:
-          eventBox.querySelector("p").innerHTML = ("1996");
+          eventDate.innerHTML = ("1996");
           break;
+        // 1997
         case 469:
-          eventBox.querySelector("p").innerHTML = ("1997");
+          eventDate.innerHTML = ("1997");
           break;
+        // 1998
         case 523:
-          eventBox.querySelector("p").innerHTML = ("1998");
+          eventDate.innerHTML = ("1998");
           break;
+        // 1999
         case 577:
-          eventBox.querySelector("p").innerHTML = ("1999");
+          eventDate.innerHTML = ("1999");
+          eventTitle.innerHTML = ("CITY OF CHICAGO V. MORALES RULING");
+          eventText.innerHTML = ("The U.S. Supreme Court affirms in City of Chicago v. Morales that Chicago's Gang Congregation Ordinance is unconstitutionally vague and leaves “too much discretion to the police.\"");
           break;
+        // 2000
         case 631:
-          eventBox.querySelector("p").innerHTML = ("2000");
+          eventDate.innerHTML = ("2000");
           break;
+        // 2001
         case 685:
-          eventBox.querySelector("p").innerHTML = ("2001");
+          eventDate.innerHTML = ("2001");
           break;
+        // 2002
         case 739:
-          eventBox.querySelector("p").innerHTML = ("2002");
+          eventDate.innerHTML = ("2002");
           break;
+        // 2003
         case 793:
-          eventBox.querySelector("p").innerHTML = ("2003");
+          eventDate.innerHTML = ("2003");
           break;
+        // 2004
         case 847:
-          eventBox.querySelector("p").innerHTML = ("2004");
+          eventDate.innerHTML = ("2004");
           break;
+        // 2005
         case 901:
-          eventBox.querySelector("p").innerHTML = ("2005");
+          eventDate.innerHTML = ("2005");
           break;
+        // 2006
         case 955:
-          eventBox.querySelector("p").innerHTML = ("2006");
+          eventDate.innerHTML = ("2006");
           break;
+        // 2007
         case 1009:
-          eventBox.querySelector("p").innerHTML = ("2007");
+          eventDate.innerHTML = ("2007");
           break;
+        // 2008
         case 1063:
-          eventBox.querySelector("p").innerHTML = ("2008");
+          eventDate.innerHTML = ("2008");
           break;
+        // 2009
         case 1117:
-          eventBox.querySelector("p").innerHTML = ("2009");
+          eventDate.innerHTML = ("2009");
           break;
+        // 2010
         case 1172:
-          eventBox.querySelector("p").innerHTML = ("2010");
+          eventDate.innerHTML = ("2010");
+          eventTitle.innerHTML = ("COURT STRIKES DOWN CHICAGO HANDGUN BAN");
+          eventText.innerHTML = ("The U.S. Supreme Court decides 5-4 in McDonald v. City of Chicago that the second amendment applies to state and local gun-control laws, rendering the city's ban on handguns largely unenforceable.");
           break;
+        // 2011
         case 1226:
-          eventBox.querySelector("p").innerHTML = ("2011");
+          eventDate.innerHTML = ("2011");
+          eventTitle.innerHTML = ("RAHM EMANUEL ELECTED MAYOR");
+          eventText.innerHTML = ("Rahm Emanuel becomes Chicago's 55th mayor, following Mayor Richard Daley's retirement after 22 years in office.");
           break;
+        // 2012
         case 1280:
-          eventBox.querySelector("p").innerHTML = ("2012");
+          eventDate.innerHTML = ("2012");
           break;
+        // 2013
         case 1334:
-          eventBox.querySelector("p").innerHTML = ("2013");
+          eventDate.innerHTML = ("JAN. 29, 2013");
+          eventTitle.innerHTML = ("DEATH OF HADIYA PENDLETON");
+          eventText.innerHTML = ("13-year-old Hadiya Pendleton was killed in a gang-related shooting in Harsh Park one week after having performed at President Obama's second inauguration ceremonies.");
           break;
       }
   }

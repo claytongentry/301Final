@@ -49,18 +49,18 @@
   text-align: center;
 }
 
-#interactive h3 {
+#interactive_title {
   font-family: Langdon;
   font-size: 40px;
 }
 
 #interactive #crimeChart {
-  margin: -15px auto 5px auto;
+  margin: -65px auto 5px auto;
 }
 
 #event_box {
-  width: 275px;
-  height: 175px;
+  width: 325px;
+  height: 225px;
   border: 1px solid black;
   border-radius: 20px;
   background-color: black;
@@ -68,21 +68,40 @@
   margin-top: 50px;
   margin-bottom: -200px;
   margin-right: 240px;
+  padding: 7px;
+  text-align: center;
   overflow: scroll;
+  font-family: Langdon;
 }
 
-#event_box p {
-  margin-top: 30px;
-  font-family: Roboto;
-  font-size: 25px;
+#event_title {
+  font-size: 24px;
   color: white;
+}
+
+#event_date {
+  font-size: 24px;
+  color: white;
+  margin-bottom: -50px;
+}
+
+#event_image {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+#event_text {
+  color: white;
+  font-family: Roboto;
 }
 
 #interactive_key {
   width: 150px;
   height: 30px;
-  margin-top: -395px;
-  margin-left: 625px;
+  margin-top: -345px;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid black;
   padding: 7px;
 }
@@ -100,7 +119,7 @@
   margin-left: 5px;
 }
 
-#story_container {
+.story_container {
   margin: 50px auto 10px auto;
   height: auto;
   width: 600px;
@@ -108,14 +127,14 @@
   margin-left: 300px;
 }
 
-#story_container p {
+.story_container p {
   margin-top: 28px;
   line-height: 27px;
   font-size: 18px;
   font-family: Roboto, sans-serif;
 }
 
-#story_container #drop {
+.story_container #drop {
   font-family: Langdon;
   color: red;
   font-size: 75px;

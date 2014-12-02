@@ -52,27 +52,9 @@
 
         <div class = "footer" style = "margin-top:210px;"></div>
 
-        <div id = "interactive">
-
-            <h3>chicago murders over time</h3>
-
-            <!--Interactive will go here-->
-            <div id = "event_box">
-              <p>Click a label!</p>
-            </div>
-
-            <div id = "room_for_chart"></div>
-
-            <div id = "interactive_key">
-                <div id = "color_box"></div>
-                <p>MURDERS</p>
-            </div>
-
-        </div>
-
         <div class = "footer"></div>
 
-        <div id="story_container">
+        <div class="story_container">
             <!-- Story goes here -->
             <p><span id="drop">f</span>
               <p>or the past 20 years, Asiaha Butler has lived in Chicago’s
@@ -123,7 +105,20 @@
                 We all know it, but we’re not talking about logic. We’re talking
                 about exploiting people through their fears.”
 
-              </p><p>Politicians have capitalized on these perceptions in order
+              </p>
+
+              <!--This is where our final video story will go-->
+              <div id = "video_story">
+                  <div id = "vid_header">
+                      <h5>Spotlight on Englewood</h5>
+                      <h2>a more interesting title goes here</h2>
+                  </div>
+                  <video id = "spotlight_Englewood" controls style = "width: 1000px; margin-left: -100px;">
+                      <source src = "Englewood_Roll.mp4" type = "video/mp4">
+                  </video>
+              </div>
+
+              <p>Politicians have capitalized on these perceptions in order
                 to rally support during election periods. For example, in this
                 year’s Illinois gubernatorial election, Republican candidate
                 Bruce Rauner harped on Gov. Pat Quinn’s failure to adequately
@@ -188,13 +183,35 @@
                 </p><p>Hall said his Marine uniform was hanging in the
                   backseat of the car.
 
-                <p><span class="soundcite" data-id="178521230" data-start="0"
-                  data-end="14472">“If I wasn’t in a position to where I had
+                </p><p>“If I wasn’t in a position to where I had
                   some sort of privilege by being a vet, if I had not served
                   my country already,” he said, “there’s no telling how
-                  criminalized my life could be right now.”</span></p>
+                  criminalized my life could be right now.”
+              </div>
 
-                <p>In an attempt to reduce the 2012 murder rate, Chicago paid
+                  <div id = "interactive">
+
+                    <h3 id = "interactive_title">highlights in chicago's politics and crime</h3>
+
+                    <!--Interactive will go here-->
+                    <div id = "event_box">
+                      <h5 id = "event_date">CLICK A LABEL<br/>FOR A CRIMINAL OR POLITICAL<br/>HIGHLIGHT FROM THAT YEAR</h5>
+                      <div id = "event_image"></div>
+                      <h3 id = "event_title"></h3>
+                      <p id = "event_text"></p>
+                    </div>
+
+                    <div id = "room_for_chart"></div>
+
+                    <div id = "interactive_key">
+                      <div id = "color_box"></div>
+                      <p>MURDERS</p>
+                    </div>
+
+                  </div>
+
+              <div class = "story_container">
+                </p><p>In an attempt to reduce the 2012 murder rate, Chicago paid
                   police officers approximately $103 million in overtime in 2013,
                   with some officers receiving more overtime pay than salary. The
                   2013 murder total dropped to 414 from the 2012 total of 500,
@@ -210,19 +227,7 @@
                   were around because they don’t speak and engage with the
                   community.”
 
-                </p>
-                <!--This is where our final video story will go-->
-                <div id = "video_story">
-                    <div id = "vid_header">
-                        <h5>Spotlight on Englewood</h5>
-                        <h2>a more interesting title goes here</h2>
-                    </div>
-                    <video id = "spotlight_Englewood" controls = "controls" style = "width: 1000px; margin-left: -100px;">
-                        <source src = "Englewood_Roll.mp4" type = "video/mp4">
-                    </video>
-                </div>
-
-                  <p>Lurigio, the Loyola University professor, said the most
+                </p><p>Lurigio, the Loyola University professor, said the most
                     telling way to assess politicians’ knowledge of crime is by
                     their approach to solving the issue.
 
