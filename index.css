@@ -45,13 +45,18 @@
 #interactive {
   height: 515px;
   width: auto;
-  margin: 5px auto 5px auto;
+  margin: 50px auto 80px auto;
   text-align: center;
 }
 
 #interactive_title {
   font-family: Langdon;
-  font-size: 40px;
+  font-size: 56px;
+}
+
+#interactive_deck {
+  font-family: Langdon;
+  font-size: 24px;
 }
 
 #interactive #crimeChart {
@@ -60,7 +65,6 @@
 
 #event_box {
   width: 325px;
-  height: 225px;
   border: 1px solid black;
   border-radius: 20px;
   background-color: black;
@@ -71,6 +75,7 @@
   padding: 7px;
   text-align: center;
   overflow: scroll;
+  height: 225px;
   font-family: Langdon;
 }
 
