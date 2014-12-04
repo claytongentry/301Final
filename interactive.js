@@ -7,14 +7,14 @@ $(document).ready(function() {
     holder = document.getElementById('room_for_chart');
     holder.innerHTML += htmlForGraph;
 
-
+    // From Chart.js documentation – graph labels, point customization and data
     var murderData = {
       labels : ["1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997",
       "1998", "1999", "2000", "2001", "2002", "2003", "2004",
       "2005", "2006", "2007", "2008", "2009", "2010", "2011",
       "2012", "2013", "2014"],
 
-      // Murder
+      // Murder counts per year
       datasets : [
           {
             fillColor : "rgba(255,0,0,0.6)",
@@ -29,13 +29,9 @@ $(document).ready(function() {
       ]
   }
 
+  // Make the chart
   var ctx = document.getElementById("crimeChart").getContext("2d");
   var crimeChart = new Chart(ctx).Line(murderData);
-
-  // Turns cursor into a pointer on label:hover
-  /*$(murderData.datasets.data).on('mouseover', function() {
-    $(this).css("cursor", "pointer");
-  });*/
 
   holder.onclick = function(evt){
 

@@ -24,14 +24,14 @@
 
 #header h1 {
   color: white;
-  font-size: 160px;
-  font-family: Langdon;
+  font-size: 120px;
+  font-family: Special Elite;
 }
 
 #header h4 {
   color: white;
   font-size: 18px;
-  font-family: Langdon;
+  font-family: Special Elite;
   line-height: 30px;
 }
 
@@ -39,7 +39,7 @@
   font-size: 18px;
   margin-top: 15px;
   color: #bdbdbd;
-  font-family: Langdon;
+  font-family: Special Elite;
 }
 
 #interactive {
@@ -50,12 +50,12 @@
 }
 
 #interactive_title {
-  font-family: Langdon;
+  font-family: Special Elite;
   font-size: 56px;
 }
 
 #interactive_deck {
-  font-family: Langdon;
+  font-family: Special Elite;
   font-size: 24px;
 }
 
@@ -76,16 +76,16 @@
   text-align: center;
   overflow: scroll;
   height: 225px;
-  font-family: Langdon;
+  font-family: Special Elite;
 }
 
 #event_title {
-  font-size: 24px;
+  font-size: 18px;
   color: white;
 }
 
 #event_date {
-  font-size: 24px;
+  font-size: 20px;
   color: white;
   margin-bottom: -50px;
 }
@@ -102,13 +102,13 @@
 }
 
 #interactive_key {
-  width: 150px;
+  width: 170px;
   height: 30px;
   margin-top: -325px;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid black;
-  padding: 7px;
+  padding: 8px;
 }
 
 #interactive #interactive_key #color_box {
@@ -118,7 +118,7 @@
 }
 
 #interactive #interactive_key p {
-  font-family: Langdon;
+  font-family: Special Elite;
   font-size: 16px;
   margin-top: -17px;
   margin-left: 5px;
@@ -140,7 +140,7 @@
 }
 
 .story_container #drop {
-  font-family: Langdon;
+  font-family: Special Elite;
   color: red;
   font-size: 75px;
   float: left;
@@ -203,7 +203,7 @@
 }
 
 #video_story #vid_header {
-  font-family: Langdon, sans-serif;
+  font-family: Special Elite, sans-serif;
   margin-left: -100px;
 }
 
@@ -234,5 +234,5 @@
 
 .footer p {
   color: white;
-  font-family: Langdon;
+  font-family: Special Elite;
 }
