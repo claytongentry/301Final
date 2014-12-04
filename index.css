@@ -60,7 +60,7 @@
 }
 
 #interactive #crimeChart {
-  margin: -65px auto 5px auto;
+  margin: -65px auto 0px auto;
 }
 
 #event_box {
@@ -104,7 +104,7 @@
 #interactive_key {
   width: 150px;
   height: 30px;
-  margin-top: -345px;
+  margin-top: -325px;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid black;
